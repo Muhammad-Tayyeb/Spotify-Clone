@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --a:0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.flex{
+    display: flex;
+}
+.left{
+    width: 25%;
+    margin: 3px;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    font-size:xxx-large;
+    font-family: sans-serif;;
+}
+.right{
+    width: 75vw;
+    margin: 3px;
+    position: relative;
+}
+.home ul li{
+    display: flex;
+    gap: 15px;
+    width: 20px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.heading {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+
+.heading img {
+    width: 30px;
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+.footer a{
+    color:  gray;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    height: 80px;
+}
+
+.header > * {
+    padding: 20px;
+}
+
+.right{
+    margin: 16px 0;
+    overflow: scroll;
+}
+
+.spotifyplaylist{
+    padding: 16px;
+
+}
+.spotifyplaylist h1{
+    padding: 16px;
+
+}
+
+.cardContainer{
+    display:flex;
+    max-height: 100vh;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.card {
+    width: 250px;
+    /* set a default padding or remove the property */
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+    transition: all 1s;
+}
+.card:hover{
+    background-color: rgb(106, 105, 105);
+    cursor: pointer;
+}
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      
+      .card {
+        width: 200px;          /* fixed width */
+        height: 280px;
+        border-radius: 12px;   /* rounded corners */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .card:hover {
+        color: white;
+        transform: translateY(-5px);
+      }
+      
+      .card img {
+        width: 100%;
+        height: 150px;
+         object-fit: cover;
+      }
+      
+      .card h2 {
+        font-size: 16px;
+        margin: 10px 0 5px;
+      }
+      
+      .card p {
+        font-size: 14px;
+        color: #f2f2f2;
+        margin: 0 0 10px;
+      }
+      
+.card > *{
+    padding-top: 3px;
+}
+
+.card img{
+    width: 100%;
+    object-fit:contain;
+}
+.play{
+    position: absolute;
+    right: 15px;
+    bottom: 90px;
+    opacity: var(--a) ;
+    transition: all 0.2s ease-in-out;
+}
+.play:hover{
+    cursor: pointer;
+       color: blue;
+} 
+.buttons > *{
+    margin: 0 12px;
+}
+
+.Signupbt{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.Signupbt:hover{
+    font-size: 17px;
+    color: white;
+}
+
+.Loginbtn{
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.Loginbtn:hover{
+    background-color: rgb(221, 218, 213);
+    width: 81px;
+    font-size: 17px;
+}
+
+.playbar{
+    position: fixed;
+    bottom: 70px;
+    /* background-image: rgb(105, 109, 105); */
+    width: 400px;
+  height: auto;
+  background-size: cover;
+  background-image: url("bgimage.png");
+  background-repeat: repeat;
+    width: 70%;
+    padding: 12px;
+    min-height: 50px;
+    border-radius: 15px;
+}
+.playbar:hover{
+    opacity: 20;
+}
+.abovebar{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px;
+}
+.naatlist ul{
+    padding: 0 12px;
+}
+
+.naatlist ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
+}
+.naatlist{
+    height: 650px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 44px 0;
+
+}
+.hamburger-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.naatlist ul li img{
+    width: 36px;
+    height: 36px;
+}
+.naatlist .info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+.naatlist .info > div:first-child{
+    font-weight: 600;
+}
+.playnow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.playnow span{
+font-size: 15px;
+padding: 12px;
+cursor: pointer;
+
+}
+.naatlist .playnow img{
+    width: 24px;
+    height: 24px;
+}
+
+
+.seekbar{
+    height: 6px;
+    width: 98%;
+    background-color:  rgb(255, 255, 255);
+    position: absolute;
+    bottom: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 13px;
+    background-color: white;
+    position: relative;
+    bottom: 8px;
+    left: 0%;
+    cursor: pointer;
+    transition: left 0.25;
+}
+.naatbuttons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+} 
+.naatinfo{
+    width: 250px;
+    color: white;
+    padding: 0;
+}
+.naattime{
+    padding: 0;
+    color: white;
+    /* width: 125px; */
+}
+.timevol{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+.close{
+    display: none;
+}
+
+@media (max-width: 1300px) {
+      
+    .left{
+        position: absolute;
+        left: -120%;
+        transition: all 0.5s ease-in-out;
+        z-index: 1; 
+        width: 384px;
+        height: 90vh;
+        background-color: black;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    .naatlist{
+        height: 440px;
+    }
+    .naatinfo .naattime{
+        width: auto;
+    }
+    .info div{
+        word-break: break-all;
+    }
+    .home .close{
+        position: absolute;
+        margin-top: 10px;
+        right: 25px;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+    }
+    .right{
+        width: 100vw;
+        margin-top: 0;
+    }
+    .playbar{
+        width: calc(100vw - 90px);
+        align-items: center;
+        height: auto;
+        left: 33px;
+        bottom: 20px;
+        font-weight: bolder;
+        font-size: 0.9rem;
+    }  
+    .seekbar{
+        width: calc(100vw - 110px);
+    }
+    .abovebar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 20px;
+    }
+    .cardContainer{
+        justify-content: center;
+    }
+    .naattime{
+        font-size: x-small;
+    }
+    .timevol{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 13px;
+    }
+    .naatinfo{
+        font-size: small;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .close{
+        display: block;
+    }
+    .hamburger
+    {
+        display: block;
+    }
+    .card{
+        width: 50vw;
+    }
+    .cardContainer{
+        margin: 0;
+    }
+  }
+
+  @media (max-width: 400px)
+  {
+        .card{
+            width: 70vw;
+        }
+  }
